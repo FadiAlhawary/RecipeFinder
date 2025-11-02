@@ -10,11 +10,13 @@ function App() {
     <>
       <ColorModeProvider forcedTheme={colorMode}>
         <NavBar colorMode={colorMode} setColorMode={setColorMode} />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          {/* <Route path="/recipes" element={<Recipes />} /> */}
-          <Route path="/about" element={<About />} />
-        </Routes>
+        <div id="routing-style">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            {/* <Route path="/cart" element={<ShoppingCart />} /> */}
+            <Route path="/about" element={<About />} />
+          </Routes>
+        </div>
       </ColorModeProvider>
     </>
   );
